@@ -2,6 +2,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+    // Remoção de números mágicos
+    private static final Integer PAPEL = 1;
+    private static final Integer TESOURA = 2;
+    private static final Integer PEDRA = 3;
+    private static final Integer LAGARTO = 4;
+    private static final Integer SPOCK = 5;
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -10,55 +16,55 @@ public class Main {
         int computador = new Random().nextInt(5) + 1;
         System.out.println("O COMPUTADOR escolheu: " + computador);
 
-        if (jogada == 1 && computador == 1) {
+        if (jogada == PAPEL && computador == PAPEL) {
             System.out.println("Empate. Papel empata com papel!");
-        } else if (jogada == 1 && computador == 2) {
+        } else if (jogada == PAPEL && computador == TESOURA) {
             System.out.println("Perdeu! Tesoura corta o papel!");
-        } else if (jogada == 1 && computador == 3) {
+        } else if (jogada == PAPEL && computador == PEDRA) {
             System.out.println("Ganhou! Pedra embrulha o papel!");
-        } else if (jogada == 1 && computador == 4) {
+        } else if (jogada == PAPEL && computador == LAGARTO) {
             System.out.println("Perdeu! Lagarto come o papel!");
-        } else if (jogada == 1) {
+        } else if (jogada == PAPEL) {
             System.out.println("Ganhou! Papel refuta o Spock!");
-        } else if (jogada == 2 && computador == 1) {
+        } else if (jogada == TESOURA && computador == PAPEL) {
             System.out.println("Ganhou. Tesoura corta o papel!");
-        } else if (jogada == 2 && computador == 2) {
+        } else if (jogada == TESOURA && computador == TESOURA) {
             System.out.println("Empate! Tesoura empata com tesoura!");
-        } else if (jogada == 2 && computador == 3) {
+        } else if (jogada == TESOURA && computador == PEDRA) {
             System.out.println("Perdeu! Pedra quebra a tesoura!");
-        } else if (jogada == 2 && computador == 4) {
+        } else if (jogada == TESOURA && computador == LAGARTO) {
             System.out.println("Ganhou! Tesoura decapta o lagarto!");
-        } else if (jogada == 2) {
+        } else if (jogada == TESOURA) {
             System.out.println("Perdeu! Spock derrete a tesoura!");
-        } else if (jogada == 3 && computador == 1) {
+        } else if (jogada == PEDRA && computador == PAPEL) {
             System.out.println("Perdeu. Papel embrulha a pedar!");
-        } else if (jogada == 3 && computador == 2) {
+        } else if (jogada == PEDRA && computador == TESOURA) {
             System.out.println("Empate! Tesoura empata com tesoura!");
-        } else if (jogada == 3 && computador == 3) {
+        } else if (jogada == PEDRA && computador == PEDRA) {
             System.out.println("Empatou! Pedra empata com pedra!");
-        } else if (jogada == 3 && computador == 4) {
+        } else if (jogada == PEDRA && computador == LAGARTO) {
             System.out.println("Ganhou! Pedra esmaga o lagarto!");
-        } else if (jogada == 3) {
+        } else if (jogada == PEDRA) {
             System.out.println("Perdeu! Spock vaporiza a apedra!");
-        } else if (jogada == 4 && computador == 1) {
+        } else if (jogada == LAGARTO && computador == PAPEL) {
             System.out.println("Ganhou. Lagarto come papel!");
-        } else if (jogada == 4 && computador == 2) {
+        } else if (jogada == LAGARTO && computador == TESOURA) {
             System.out.println("Perdeu! Tesoura decapta o lagarto!");
-        } else if (jogada == 4 && computador == 3) {
+        } else if (jogada == LAGARTO && computador == PEDRA) {
             System.out.println("Perdeu! Pedra esmaga lagarto!");
-        } else if (jogada == 4 && computador == 4) {
+        } else if (jogada == LAGARTO && computador == LAGARTO) {
             System.out.println("Empatou! Lagarto empata com lagarto!");
-        } else if (jogada == 4) {
+        } else if (jogada == LAGARTO) {
             System.out.println("Ganhou! Lagarto envenena o Spock!");
-        } else if (jogada == 5 && computador == 1) {
+        } else if (jogada == SPOCK && computador == PAPEL) {
             System.out.println("Perdeu. Papel refuta Spock!");
-        } else if (jogada == 5 && computador == 2) {
+        } else if (jogada == SPOCK && computador == TESOURA) {
             System.out.println("Ganhou! Spock derrete a tesoura!");
-        } else if (jogada == 5 && computador == 3) {
+        } else if (jogada == SPOCK && computador == PEDRA) {
             System.out.println("Ganhou! Spock vaporiza a pedra!");
-        } else if (jogada == 5 && computador == 4) {
+        } else if (jogada == SPOCK && computador == LAGARTO) {
             System.out.println("Perdeu! Lagarto envenena Spock!");
-        } else if (jogada == 5) {
+        } else if (jogada == SPOCK) {
             System.out.println("Empatou! Spock empata com Spock!");
         }
 
