@@ -24,7 +24,9 @@ public class Main {
             System.out.println("Ganhou! Pedra embrulha o papel!");
         } else if (jogada == PAPEL && computador == LAGARTO) {
             System.out.println("Perdeu! Lagarto come o papel!");
-        } else if (jogada == PAPEL) {
+        }
+
+        else if (jogada == PAPEL) {
             System.out.println("Ganhou! Papel refuta o Spock!");
         } else if (jogada == TESOURA && computador == PAPEL) {
             System.out.println("Ganhou. Tesoura corta o papel!");
@@ -34,7 +36,9 @@ public class Main {
             System.out.println("Perdeu! Pedra quebra a tesoura!");
         } else if (jogada == TESOURA && computador == LAGARTO) {
             System.out.println("Ganhou! Tesoura decapta o lagarto!");
-        } else if (jogada == TESOURA) {
+        }
+
+        else if (jogada == TESOURA) {
             System.out.println("Perdeu! Spock derrete a tesoura!");
         } else if (jogada == PEDRA && computador == PAPEL) {
             System.out.println("Perdeu. Papel embrulha a pedar!");
