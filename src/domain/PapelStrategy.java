@@ -1,0 +1,14 @@
+package domain;
+
+public class PapelStrategy implements Strategy {
+    @Override
+    public void execute(StrategyType type) {
+        switch (type) {
+            case TESOURA -> System.out.println("Perdeu. Tesoura corta o papel!");
+            case PEDRA ->  System.out.println("Ganhou. Papel embrulha a Pedra.!");
+            case LAGARTO ->  System.out.println("Perdeu. Lagarto come o papel!");
+            case SPOCK -> System.out.println("Ganhou. Papel refuta o Spock!");
+            default -> System.out.println("Empatou!");
+        }
+    }
+}
