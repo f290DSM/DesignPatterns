@@ -1,4 +1,4 @@
-package domain;
+package domain.designpattern;
 
 public enum StrategyType {
     PAPEL(1), TESOURA(2), PEDRA(3), LAGARTO(4), SPOCK(5);

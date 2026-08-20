@@ -1,4 +1,4 @@
-package domain;
+package domain.designpattern;
 
 public class SpockStrategy implements Strategy {
     @Override

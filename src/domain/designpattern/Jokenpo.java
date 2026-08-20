@@ -1,4 +1,4 @@
-package domain;
+package domain.designpattern;
 
 public class Jokenpo {
     private Strategy strategy;
